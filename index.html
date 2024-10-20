@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://kit.fontawesome.com/7f709c4418.js" crossorigin="anonymous"></script>
+    <script src="funciones.js" defer></script>
 
 <div class="menu">
             <div class="">
@@ -13,6 +14,8 @@
                         <li><a href="#Sobre_mi">Sobre mí</a></li>
                         <li><a href="#Tecnologías">Conocimientos</a></li>
                         <li><a href="#Proyectos">Proyectos</a></li>
+                        <li class="al-dr"><button class="btn btnModOscuro" onclick="ModoOscuro()">Modo Oscuro</button></li>
+                        <li><button class="btn Traducir" onclick="Traducir()">Translate</button></li>
                     </ul>
                 </div>
             </div>
@@ -24,17 +27,22 @@
 
 <body>
 
+<div class="fondoDePantalla">
+    <div class="circulo"> </div>
+</div>
+
+
 <div class="principal">
 
     <div class="flex-container">
         <form class="form">           
           <h1>Gastón Sosa</h1>
-          <h3>Desarrollador</h3>             
+          <h3>Desarrollador Backend</h3>             
         </form>
         <div class="form-img">
             <div class="img-container">
                 <div>
-                    <img src="C:\Users\PC\Desktop\UTN\Diseño Web\mail.png">
+                    <img src="..\img\perfil01.jpg">
                 </div>
             </div>
         </div>      
@@ -44,28 +52,33 @@
 </div>
 
 <section id="Sobre_mi">
-<div class="principal">
-	<h1>Sobre mi</h1>
-    <p> He aprobado con éxito la Tecnicatura Universitario en Sistemas Informáticos en UTN FRGP. Durante mi trayectoria laboral, he participado activamente en el desarrollo de software, colaborando y dirigiendo en proyectos destacados como miembro de un equipo.
-    Mi compromiso con el crecimiento profesional y la innovación en el ámbito de la informática y la tecnología es constante. </p>
+<div class="mscn">
+    <div class="sobreMi">
+        <h1>Sobre mi</h1>
+        <p> He aprobado con éxito la Tecnicatura Universitario en Sistemas Informáticos en UTN FRGP. Durante mi trayectoria laboral, he participado activamente en el desarrollo de software, colaborando y dirigiendo en proyectos destacados como miembro de un equipo.
+        Mi compromiso con el crecimiento profesional y la innovación en el ámbito de la informática y la tecnología es constante. </p>
+        <button class="btn" style="padding:3%" onclick="VentanaNuevaConCVPDF()">Ver Curriculum</button>
+    </div>
 </div>	
 </section>
 
 <section id="Tecnologías">
-<div class="principal">
+<div class="mscn principal">
 	<h1>Tecnologías</h1>
+    <p>Estas son aplicaciones que he utilizado a lo largo de mi carrera y aprendizaje</p>
 </div>
 </section>
 
 	<section id="Proyectos">
-<div class="principal">
+<div class="mscn principal">
 	<h1>Proyectos</h1>
+    <p>Estos son proyectos que cree durante mi paso por UTN </p>
 </div>
 
 </section>
 
 <section id="info">
-<div class="principal">
+<div class="mscn principal">
 	<h1>Información adicional</h1>
 </div>
 
