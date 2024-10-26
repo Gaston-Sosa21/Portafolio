@@ -7,9 +7,8 @@
     <script src="https://kit.fontawesome.com/7f709c4418.js" crossorigin="anonymous"></script>
     <script src="funciones.js" defer></script>
 
+
 <div class="menu">
-            <div class="">
-                <div class="">
                     <ul class="itemsMenu">
                         <li><a href="#Sobre_mi">Sobre mí</a></li>
                         <li><a href="#Tecnologías">Conocimientos</a></li>
@@ -17,8 +16,6 @@
                         <li class="al-dr"><button class="btn btnModOscuro" onclick="ModoOscuro()">Modo Oscuro</button></li>
                         <li><button class="btn Traducir" onclick="Traducir()">Translate</button></li>
                     </ul>
-                </div>
-            </div>
 </div>
 
 	<title>Portafolio</title>
@@ -27,25 +24,32 @@
 
 <body>
 
-<div class="fondoDePantalla">
-    <div class="circulo"> </div>
+<div id="fdoPantalla" class="fondoDePantalla">
 </div>
 
 
-<div class="principal">
+<div class="mscn contenedor_principal">
 
-    <div class="flex-container">
+    <div class="contenedorFlexible">
+      
         <form class="form">           
           <h1>Gastón Sosa</h1>
-          <h3>Desarrollador Backend</h3>             
+          <h3>Desarrollador Backend</h3> 
+          <div>
+          <a href="https://github.com/Gaston-Sosa21?tab=repositories"><i class="fa-brands fa-github"></i></a><a href="www.Linkedin.com"> <i class="fa-brands fa-linkedin"></i> </a><a href="www.Linkedin.com"></a>
+          <a><i class="fa-solid fa-envelope"></i> </a>
+          </div>
+
         </form>
+      
         <div class="form-img">
             <div class="img-container">
                 <div>
-                    <img src="..\img\perfil01.jpg">
+                    <img class="logo tamimg" src="img\perfil01.jpg">
                 </div>
             </div>
-        </div>      
+        </div>     
+
     </div>
 
 
@@ -53,32 +57,79 @@
 
 <section id="Sobre_mi">
 <div class="mscn">
-    <div class="sobreMi">
-        <h1>Sobre mi</h1>
-        <p> He aprobado con éxito la Tecnicatura Universitario en Sistemas Informáticos en UTN FRGP. Durante mi trayectoria laboral, he participado activamente en el desarrollo de software, colaborando y dirigiendo en proyectos destacados como miembro de un equipo.
-        Mi compromiso con el crecimiento profesional y la innovación en el ámbito de la informática y la tecnología es constante. </p>
+
+    <div class="contenedorFlexible" style="display:flex;">
+    
+        <div class="form" style="align-content: center;padding-top: 5%;">
+                 <h1>Sobre mi</h1>
+          <p> Aprobe con éxito la Tecnicatura Universitario en Sistemas Informáticos en UTN FRGP. Durante mi trayectoria laboral, participé activamente en el desarrollo de software, colaborando y dirigiendo en proyectos destacados como miembro de un equipo.
+          Estoy comprometivo con el crecimiento profesional y la innovación en el ámbito de la informática y la tecnología. </p>
         <button class="btn" style="padding:3%" onclick="VentanaNuevaConCVPDF()">Ver Curriculum</button>
+        </div>
+
+        <div class="form-img">
+            <div class="img-container">
+            <img style="width: 40vh;" src="img/tocandoelteclado.png">
+
+
+      </div>           </div>
+
+
     </div>
+
 </div>	
 </section>
 
 <section id="Tecnologías">
-<div class="mscn principal">
-	<h1>Tecnologías</h1>
+<div class="mscn contenedor">
+<div class="tecnologias">
+    
+    <h1>Tecnologías</h1>
     <p>Estas son aplicaciones que he utilizado a lo largo de mi carrera y aprendizaje</p>
+
+<div class="conteinerimg">
+    <div class="Lenguajes">
+   <img class="tamimg" src="img/c++.png"> 
+   <img class="tamimg" src="img/c_sharp.png"> 
+   <img class="tamimg" src="img/java.png">         
+    </div>
+    <div class="Diseno">
+   <img class="tamimg" src="img/html.png"> 
+   <img class="tamimg" src="img/css.png"> 
+   <img class="tamimg" src="img/js.png">         
+    </div>
+    <div class="bd">
+   <img class="tamimg" style=" width: 12vh;" src="img/mongoDB.png"> 
+   <img class="tamimg" src="img/postgresql.png">          
+    </div>
+    <div class="ids">
+    </div>
+    <div class="otros">
+        
+    </div>
+
+
+
+   
+</div>
+
+
+</div>
 </div>
 </section>
 
-	<section id="Proyectos">
-<div class="mscn principal">
+<section id="Proyectos">
+<div class="mscn contenedor">
 	<h1>Proyectos</h1>
-    <p>Estos son proyectos que cree durante mi paso por UTN </p>
+    <p>Estudiante: </p>
+
+Experiencia laboral
 </div>
 
 </section>
 
 <section id="info">
-<div class="mscn principal">
+<div class="mscn contenedor">
 	<h1>Información adicional</h1>
 </div>
 

@@ -5,6 +5,10 @@ body{
 	color: white;
 }
 
+h1{
+	color:#07a30c;
+}
+
 a{
 	text-decoration: none;
 }
@@ -29,6 +33,9 @@ a{
 
 .menu{
 	height: 10%;
+position: sticky;
+    top: 0;
+    background-color: #1e211e;	
 }
 .itemsMenu{
     display: flex;
@@ -68,13 +75,12 @@ a{
 	align-items: center;
 }
 .circulo {
-    background: rgb(48, 173, 223);
-    height: 50px;
-    width: 50px;
+	background-image: -webkit-gradient(linear, left 0%, left 100%, from(#4a0686), to(#240124));	
+    height: 100px;
+    width: 100px;
 	border-radius: 50%;
     /* transition-property: background; */
     transition-duration: 6s;
-    animation: desplazarse;
     animation-duration: 6s;
     animation-iteration-count: infinite;
     position: relative;
@@ -91,29 +97,37 @@ a{
 	flex-wrap: wrap;
 }
 
-@keyframes desplazarse{
-	0%{
-      left: 1px;
-	  top: 1px;
-      background: rgb(228, 62, 12);
-	}
-	25%{
-		left:25px;
-		top: 25px;
-	}
-	50%{
-		background: rgb(10, 10, 226);
-		left: 50px;
-		top: 50px;
-	}
-	75%{
-		left: 75px;
-		top:75px;
-	}
-	100%{
-      left:100px;
-	  top: 100px;
-	}
+@keyframes desplazarse_1{
+	0%{left: 90%;top: 1px;}
+	25%{left:65%;top: 25px;}
+	50%{left: 45%;top: 50px;}
+	75%{left: 25%;top:75px;}
+	100%{left:0px; top: 100px;}
+}
+
+
+@keyframes desplazarse_2{
+            0% { left: 0; top: 0;}
+            25% { left: -25%; top: 25px; }
+            50% { left: -50%; top: 50px; }
+            75% { left: -75%; top: 75px; }
+            100% { left: -100%; top: 100px; }
+}
+
+@keyframes desplazarse_3{
+            0% { left: 30%; top: 0; }
+            25% { left: 25%; top: -25px; }
+            50% { left: 50%; top: -50px; }
+            75% { left: 75%; top: -75px; }
+            100% { left: 100%; top: -100px; }
+}
+
+@keyframes desplazarse_4{
+            0% { left: 30%; top: 0;}
+            25% { left: 25%; top: -25px; }
+            50% { left: 50%; top: -50px; }
+            75% { left: 10%; top: -75px; }
+            100% { left:70%; top: -100px; }
 }
 
 .mscn{
@@ -126,23 +140,21 @@ a{
 	animation-range: entry 25% cover 30%;
     animation-fill-mode: both;
 }
-
+/* ESTO GENERA EL PROBLEMA DEL MENU */
 @keyframes mostrarSeccion {
  from{
 	opacity: 0;
-	scale: 25%;
+	scale: 1%;
  }
  to{
 	opacity: 1;
 	scale: 100%;
  }	
 }
-
-/*---------- SECCIÓN 1 ------------------------*/
-
+/*---------- CONTENEDORES ------------------------*/
 
 
-.flex-container{
+.contenedorFlexible{
 	display:flex;
 	align-items: center;
 	flex-wrap: wrap; 
@@ -164,25 +176,6 @@ a{
 	padding:30px;
 	order:5;
 }
-.form__input{
-	width:100%;
-	padding: 7px;
-	margin:6px 0;
-	border:none;
-	border-bottom:3px solid #5dd;
-	background: transparent;
-	color:white;
-}
-.form__input:focus{
-	background: linear-gradient(to bottom,transparent,#222);
-	outline:none;
-	border-bottom: 3px solid #5f9;
-}
-
-.form textarea{
-min-height: 140px;
-resize: none;/*Para que no extiendan el textarea */
-}
 
 .form-img{
 	flex:1;
@@ -194,20 +187,33 @@ resize: none;/*Para que no extiendan el textarea */
 }
 .form-img div{
 	padding: 10px;
+	text-align: center;
 }
 .img-container{
 	margin: auto;
 }
-.img-container div{
-	background-color: #fff;
-	border-radius: 50%;
-	text-align: center;
-	padding:40px;
-}
+
 .form-img img{
 	width: 60%;
 	margin:auto;
 }
+
+
+
+
+/*---------- SECCIÓN 1 ------------------------*/
+
+
+
+.logo {
+            color: #e6e6e6;
+            font-size: 180px;
+            font-weight: 800;
+            letter-spacing: -10px;
+            margin-bottom: 0px;
+            margin-top: 100px;
+            border-radius:50%;
+          }
 
 @media (max-width: 870px) {
 	.itemsMenu{
@@ -215,18 +221,17 @@ resize: none;/*Para que no extiendan el textarea */
 	}
 }
 
-.contenedor{
-
-}
-
-.principal{
+.contenedor_principal{
 	width:100%;
 	height: 80%;
-	padding:10% 0 10% 0;
+	/*padding:10% 0 10% 0;*/
+}
 
-	border:solid black;
-	/* background-color: lightblue; */
-	/* opacity: 0.50;  */
+.contenedor{
+	width:100%;
+	height: 80%;
+	padding:5% 0 5% 0;
+	/*border:solid black;*/
 }
 
 /*---------------------------------------*/
@@ -240,3 +245,48 @@ resize: none;/*Para que no extiendan el textarea */
   font-size: 50px;
   font-style: bold;
 }
+
+/*---------------------------------------*/
+
+
+.tecnologias{
+	text-align: center;
+	align-items: center;
+	padding: 10%;
+
+}
+
+.tamimg{
+	width: 15vh;
+}
+
+.tamimg:hover{
+	/*border: solid #07a30c;*/
+	filter:drop-shadow(0px 0px 20px #07a30c);
+   transform: scale(2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);	
+}
+
+.conteinerimg{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	padding: 2% 10% 2% 10%
+}
+
+.conteinerimg div{
+
+}
+
+/*---------------------------------------*/
+
+
+
+
+
+
+
+
+
