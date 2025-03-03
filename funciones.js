@@ -1,5 +1,6 @@
 
-//Cambiar a modo oscuro
+//Cambiar a modo oscuro ------------------------------
+
 
 function ModoOscuro() {
     console.log("Modo darkside activado");
@@ -13,7 +14,7 @@ function ModoOscuro() {
 
 }
 
-//Circulos del fondo
+//Circulos del fondo ------------------------------
 
 document.addEventListener("DOMContentLoaded", function() {
 
@@ -40,3 +41,20 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
  });
+
+ //Ventana emergente con Curriculum ------------------------------
+
+ function VentanaNuevaConCVPDF() {
+    window.open('documentos/Gastón Sosa CV.pdf', '_blank');
+}
+
+ //Enviar correo ------------------------------
+
+function enviarCorreo() {
+    var asunto = document.getElementById("asunto").value;
+    var mensaje = document.getElementById("mensaje").value;
+    var emailDestino = "gastonsosa.e@gmail.com"; // Reemplázalo con el correo al que deseas enviar
+
+    var mailtoLink = "mailto:" + emailDestino + "?subject=" + encodeURIComponent(asunto) + "&body=" + encodeURIComponent(mensaje);
+    window.location.href = mailtoLink;
+}

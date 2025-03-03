@@ -1,142 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="proyectos.css">
+
     <script src="https://kit.fontawesome.com/7f709c4418.js" crossorigin="anonymous"></script>
     <script src="funciones.js" defer></script>
 
+    <link rel="icon" href="img/perfil01.jpg">
 
-<div class="menu">
-                    <ul class="itemsMenu">
-                        <li><a href="#Sobre_mi">Sobre mí</a></li>
-                        <li><a href="#Tecnologías">Conocimientos</a></li>
-                        <li><a href="#Proyectos">Proyectos</a></li>
-                        <li class="al-dr"><button class="btn btnModOscuro" onclick="ModoOscuro()">Modo Oscuro</button></li>
-                        <li><button class="btn Traducir" onclick="Traducir()">Translate</button></li>
-                    </ul>
-</div>
+    <div class="menu">
+        <ul class="itemsMenu">
+            <li><a href="#Sobre_mi">Sobre mí</a></li>
+            <li><a href="#Tecnologías">Tecnologías</a></li>
+            <li><a href="#Proyectos">Proyectos</a></li>
+            <li class="al-dr"><button class="btn btnModOscuro" onclick="ModoOscuro()">Modo Oscuro</button></li>
+            <!-- <li><button class="btn Traducir" onclick="Traducir()">Translate</button></li> -->
+        </ul>
+    </div>
 
-	<title>Portafolio</title>
+    <title>Gastón Sosa</title>
 
 </head>
 
 <body>
 
-<div id="fdoPantalla" class="fondoDePantalla">
-</div>
+    <div id="fdoPantalla" class="fondoDePantalla">
+    </div>
 
 
-<div class="mscn contenedor_principal">
+    <div class="mscn contenedor_principal">
 
-    <div class="contenedorFlexible">
-      
-        <form class="form">           
-          <h1>Gastón Sosa</h1>
-          <h3>Desarrollador Backend</h3> 
-          <div>
-          <a href="https://github.com/Gaston-Sosa21?tab=repositories"><i class="fa-brands fa-github"></i></a><a href="www.Linkedin.com"> <i class="fa-brands fa-linkedin"></i> </a><a href="www.Linkedin.com"></a>
-          <a><i class="fa-solid fa-envelope"></i> </a>
-          </div>
+        <div class="contenedorFlexible">
 
-        </form>
-      
-        <div class="form-img">
-            <div class="img-container">
+            <form class="form">
+                <h1>Gastón Sosa</h1>
+                <h3>Desarrollador Backend</h3>
                 <div>
-                    <img class="logo tamimg" src="img\perfil01.jpg">
+                    <a href="https://github.com/Gaston-Sosa21?tab=repositories"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="www.Linkedin.com"> <i class="fa-brands fa-linkedin"></i> </a><a href="www.Linkedin.com"></a>
+                    <a href="mailto:gastonsosa.e@gmail.com" style="font-size: 20px;text-decoration: none;color: white;"><i class="fa-solid fa-envelope"></i> </a>
+                </div>
+
+            </form>
+
+            <div class="form-img">
+                <div class="img-container">
+                    <div>
+                        <img class="logo tamimg" src="img\perfil01.jpg">
+                    </div>
                 </div>
             </div>
-        </div>     
 
-    </div>
-
-
-</div>
-
-<section id="Sobre_mi">
-<div class="mscn">
-
-    <div class="contenedorFlexible" style="display:flex;">
-    
-        <div class="form" style="align-content: center;padding-top: 5%;">
-                 <h1>Sobre mi</h1>
-          <p> Aprobe con éxito la Tecnicatura Universitario en Sistemas Informáticos en UTN FRGP. Durante mi trayectoria laboral, participé activamente en el desarrollo de software, colaborando y dirigiendo en proyectos destacados como miembro de un equipo.
-          Estoy comprometivo con el crecimiento profesional y la innovación en el ámbito de la informática y la tecnología. </p>
-        <button class="btn" style="padding:3%" onclick="VentanaNuevaConCVPDF()">Ver Curriculum</button>
         </div>
 
-        <div class="form-img">
-            <div class="img-container">
-            <img style="width: 40vh;" src="img/tocandoelteclado.png">
-
-
-      </div>           </div>
-
 
     </div>
 
-</div>	
-</section>
+    <section id="Proyectos" class="mscn">
+        <h1 style="text-align: center;font-size: 82px;">Proyectos</h1>
+        <div class=" contenedorProyectos">
+            <div class="ContenedorProyecto">
+                <div class="Proyect">
+                    <h3>Panadería</h3>
+                    <div class="DescripcionProyect">
+                        <p> Entrega final para las materias Programación III y Laboratorio de Computación III.</p>
+                        <p> Se trata de la web de administración de una panadería. La plataforma permite la interacción de dos tipos de usuarios: Clientes, quienes pueden explorar productos y realizar pedidos, y Empleados, encargados de la gestión de pedidos y administración del sistema.</p>
+                        <p> El desarrollo abarcó tanto el frontend como el backend, utilizando Microsoft Visual Studio como entorno de desarrollo y Microsoft SQL Server Management Studio para la administración de la base de datos, incluyendo la creación de tablas, registros y procedimientos almacenados.</p>
+                        <p> Las tecnologías utilizadas incluyen C# con .NET Framework para la lógica de la aplicación y SQL server Management studio para la gestión de la base de datos.</p>
+                        
+                    </div>
+                        <div class="img-container">
+                            <img style="width: 100%;display: block;" src="img/Proyectos/img_panaderia.png">
+                        </div>
+                    <div class="tecnologiasProyect">
+                        <img class="tamimg" src="img/c_sharp.png">
+                        <img class="tamimg" src="img/html.png">
+                        <img class="tamimg" src="img/css.png">
+                        <img class="tamimg" src="img/sqlServer.png">  
+                    </div> 
+                    <div class="moreProyect">
+                     <button class="botonGit">
+                           <span class="circobtn" aria-hidden="true">
+                               <span class="icon arrow"></span>
+                           </span>
+                           <span class="verRepositorio">Ver repositorio</span>
+                      </button>
+                    </div>                     
+                </div>
 
-<section id="Tecnologías">
-<div class="mscn contenedor">
-<div class="tecnologias">
+            </div>
+
+            <div class="ContenedorProyecto">
+                <div class="Proyect">
+                    <h3>Campus Virtual</h3>
+                    <div class="DescripcionProyect">
+                      <p> Último proyecto y entrega final para la materia Laboratorio de Computación IV. Consistió en el desarrollo de una página web para una universidad. La aplicación está diseñada para dos tipos de usuarios: Docente y Administrador.</p>
+                      <p> El desarrollo abarcó tanto el frontend como el backend, utilizando la IDE Eclipse junto con Java, HTML, CSS, y tecnologías como JSP y Servlets. Además, para la gestión de la base de datos, se empleó con MySQL Workbench. </p>
+                    </div>
+                        <div class="img-container">
+                            <img style="width: 100%;display: block;" src="img/Proyectos/img_inicio_universidad.png">
+                        </div>
+                    <div class="tecnologiasProyect">
+                        <img class="tamimg" src="img/java.png">
+                        <img class="tamimg" src="img/html.png">
+                        <img class="tamimg" src="img/css.png">
+                        <img class="tamimg" src="img/js.png">
+                        <img class="tamimg" src="img/mysql.png">
+                    </div>     
+                    <div class="moreProyect">
+                        <button class="botonGit">
+                              <span class="circobtn" aria-hidden="true">
+                                  <span class="icon arrow"></span>
+                              </span>
+                              <span class="verRepositorio">Ver repositorio</span>
+                         </button>
+                       </div>         
+                </div>
+
+            </div>
+
+            <div class="ContenedorProyecto">
+                <div class="Proyect">
+                    <h3>Objetos perdidos</h3>
+                        <div class="DescripcionProyect">
+                         <p>Este proyecto fue la entrega final de las materias Seminario y Programación Avanzada II, centrado en el desarrollo de una aplicación móvil con el objetivo de brindar apoyo social a sus usuarios.  </p>
+
+                         <p>La aplicación incorpora diversas funcionalidades diseñadas para facilitar la asistencia y comunicación entre quienes necesitan ayuda y quienes pueden ofrecerla.</p>
+                            
+                         <p> El desarrollo se llevó a cabo en Android Studio, utilizando Java para la lógica de la aplicación y T-SQL para la gestión de la base de datos.</p>
+                       
+                        </div>
+                        <div class="img-container">
+                            <img style="width: 100%;display: block;" src="img/Proyectos/objetosperdidos_inicio.png">
+                        </div>
+                        <div class="tecnologiasProyect">
+                            <img class="tamimg" src="img/androidStudio.png">
+                            <img class="tamimg" src="img/java.png">
+                            <img class="tamimg" src="img/mysql.png">  
+                            <img class="tamimg" style="width: 40px;" src="img/filezilla.png">  
+                        </div>   
+                        <div class="moreProyect">
+                            <button class="botonGit">
+                                  <span class="circobtn" aria-hidden="true">
+                                      <span class="icon arrow"></span>
+                                  </span>
+                                  <span class="verRepositorio">Ver repositorio</span>
+                             </button>
+                           </div>                      
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+    </section>
+
+
+    <section id="Tecnologías">
+        <div class="mscn contenedor">
+            <div class="tecnologias">
+                <h1>Tecnologías</h1>
+                <p>Estos son lenguajes, aplicaciones y entornos que he utilizado a lo largo de mi carrera y aprendizaje</p>
     
-    <h1>Tecnologías</h1>
-    <p>Estas son aplicaciones que he utilizado a lo largo de mi carrera y aprendizaje</p>
+                <div class="table-container">
+                    <table class="tech-table">
+                        <tbody>
+                            <tr>
+                                <td class="tech-item" data-tech="C++"><img class="tamimg" src="img/c++.png"></td>
+                                <td class="tech-item" data-tech="C#"><img class="tamimg" src="img/c_sharp.png"></td>
+                                <td class="tech-item" data-tech="Java"><img class="tamimg" src="img/java.png"></td>
+                                <td class="tech-item" data-tech="HTML"><img class="tamimg" src="img/html.png"></td>
+                                <td class="tech-item" data-tech="CSS"><img class="tamimg" src="img/css.png"></td>
+                            </tr>
+                            <tr>
+                                <td class="tech-item" data-tech="JavaScript"><img class="tamimg" src="img/js.png"></td>
+                                <td class="tech-item" data-tech="SQL Server"><img class="tamimg"  src="img/sqlServer.png"></td>
+                                <td class="tech-item" data-tech="MySQL"><img class="tamimg" src="img/mysql.png"></td>
+                                <td class="tech-item" data-tech="PostgreSQL"><img class="tamimg"  style="width: 20vh;" src="img/postgresql.png"></td>
+                                <td class="tech-item" data-tech="DBeaver"><img class="tamimg" src="img/dbeaver.png"></td>
+                            </tr>
+                            <tr>
+                                <td class="tech-item" data-tech="MongoDB"><img class="tamimg" src="img/mongoDB.png"></td>
+                                <td class="tech-item" data-tech="Postman"><img class="tamimg" src="img/postman.png"></td>
+                                <td class="tech-item" data-tech="Photoshop"><img class="tamimg" style="width: 20vh;" src="img/photoshop.png"></td>
+                                <td class="tech-item" data-tech="Filezilla"><img class="tamimg" style="width: 14vh;"src="img/filezilla.png"></td>
+                                <td class="tech-item" data-tech="Android Studio"><img class="tamimg" style="width: 20vh;" src="img/androidStudio.png"></td>
+                            </tr>
+                            <tr>
+                                <td class="tech-item" data-tech="Sublime Text"><img class="tamimg" style="width: 10vh;" src="img/sublimeText.png"></td>
+                                <td class="tech-item" data-tech="Visual Studio Code"><img class="tamimg" style="width: 10vh;" src="img/visualStudioCode.png"></td>
+                                <td class="tech-item" data-tech="Visual Studio 2019"><img class="tamimg"  style="width: 20vh;" src="img/visualStudio2019.png"></td>
+                                <td class="tech-item" data-tech="Visual Studio 2022"><img class="tamimg"  style="width: 20vh;" src="img/visualStudio2022.png"></td>
+                                <td class="tech-item" data-tech="Eclipse"><img class="tamimg"  style="width: 15vh;" src="img/eclipse.png"></td>
+                            </tr>
+                            <tr>
+                                <td class="tech-item" data-tech="Wireguard VPN"><img class="tamimg" style="width: 12vh;" src="img/wireguard.png"></td>
+                                <td class="tech-item" data-tech="Cisco VPN"><img class="tamimg" src="img/cisco.png"></td>
+                                <td class="tech-item" data-tech="FortiClient VPN"><img class="tamimg" style="width: 16vh;" src="img/forticlient.png"></td>
+                            </tr> 
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 
-<div class="conteinerimg">
-    <div class="Lenguajes">
-   <img class="tamimg" src="img/c++.png"> 
-   <img class="tamimg" src="img/c_sharp.png"> 
-   <img class="tamimg" src="img/java.png">         
-    </div>
-    <div class="Diseno">
-   <img class="tamimg" src="img/html.png"> 
-   <img class="tamimg" src="img/css.png"> 
-   <img class="tamimg" src="img/js.png">         
-    </div>
-    <div class="bd">
-   <img class="tamimg" style=" width: 12vh;" src="img/mongoDB.png"> 
-   <img class="tamimg" src="img/postgresql.png">          
-    </div>
-    <div class="ids">
-    </div>
-    <div class="otros">
-        
-    </div>
+    <section id="Sobre_mi">
+        <div class="mscn">
+
+            <div class="contenedorFlexible" style="display:flex;">
+
+                <div class="form" style="align-content: center;padding-top: 5%;">
+                    <h1>Sobre mi</h1>
+                    <p> Aprobe con éxito la Tecnicatura Universitario en Sistemas Informáticos en UTN FRGP. Durante mi
+                        trayectoria laboral, participé activamente en el desarrollo de software, colaborando y
+                        dirigiendo en proyectos destacados como miembro de un equipo.
+                        Estoy comprometivo con el crecimiento profesional y la innovación en el ámbito de la informática
+                        y la tecnología. </p>
+                    <button class="btn" style="padding:3%" onclick="VentanaNuevaConCVPDF()">Ver Curriculum</button>
+                </div>
+
+                <div class="form-img">
+                    <div class="img-container">
+                        <img style="width: 40vh;" src="img/tocandoelteclado.png">
 
 
+                    </div>
+                </div>
 
-   
-</div>
 
+            </div>
 
-</div>
-</div>
-</section>
+        </div>
+    </section>
 
-<section id="Proyectos">
-<div class="mscn contenedor">
-	<h1>Proyectos</h1>
-    <p>Estudiante: </p>
+    <section id="info">
+        <div class="mscn contenedor" style="text-align: center;display: list-item;">
+            <h1>Contactame</h1>
+            <div id="correo-form">
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" placeholder="Ingrese el asunto"><br><br>
+            
+                <label for="mensaje">Correo:</label>
+                <textarea id="mensaje" style="line-height:500%;width: 50%;" placeholder="Ingrese su msj"></textarea><br><br>
+            
+                <button class="btn" onclick="enviarCorreo()">Enviar Correo</button>
+            </div>        </div>
 
-Experiencia laboral
-</div>
-
-</section>
-
-<section id="info">
-<div class="mscn contenedor">
-	<h1>Información adicional</h1>
-</div>
-
-<p> Contactame </p>
-<p> [datos para envio de mail] </p>
-</section>
+    </section>
 
 
 </body>
+
 </html>
